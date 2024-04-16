@@ -19,7 +19,7 @@ const config = createConfig({
     connectors: [
         injected(),
         walletConnect({ projectId: '1234567890' }),
-        metaMask(),
+        // metaMask(),
         safe(),
     ],
     transports: {
@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.querySelector('#root') as HTMLElement).render(
         <SWRConfig>
             <WagmiProvider config={config}>
                 <QueryClientProvider client={queryClient}>
-                    <ConnectKitProvider>
+                    <ConnectKitProvider theme="midnight">
                         <App />
                     </ConnectKitProvider>
                 </QueryClientProvider>
