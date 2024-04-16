@@ -1,6 +1,7 @@
-import { FC } from "react";
-import { usePlayerMetadata } from "./getPlayerMetadata";
-import { mitmipfs } from "../utils/mitmipfs";
+import { FC } from 'react';
+
+import { mitmipfs } from '../utils/mitmipfs.js';
+import { usePlayerMetadata } from './getPlayerMetadata.js';
 
 export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
     const { data } = usePlayerMetadata(tokenId);
@@ -10,14 +11,17 @@ export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
             {data ? (
                 <div className="flex border p-2 rounded-lg border-dark-border gap-2 items-center">
                     <div className="h-12 w-12 aspect-square rounded-lg border border-dark-border overflow-hidden">
-                        <img src={mitmipfs(data.image)} alt={data.name} className="block aspect-square w-full h-full" />
+                        <img
+                            src={mitmipfs(data.image)}
+                            alt={data.name}
+                            className="block aspect-square w-full h-full"
+                        />
                     </div>
+                    {/* <video src={mitmipfs(data.animation_url)} className="block aspect-square w-full h-full" autoPlay={true} loop={true} /> */}
                     <div className="grow">
                         <h3>#{tokenId}</h3>
                     </div>
-                    <div className="btn btn-small">
-                        Delegate
-                    </div>
+                    <div className="btn btn-small">Delegate</div>
                 </div>
             ) : (
                 <div>
@@ -25,5 +29,5 @@ export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
                 </div>
             )}
         </div>
-    )
+    );
 };
