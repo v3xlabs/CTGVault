@@ -37,7 +37,7 @@ export const WalletInfo = () => {
                 </span>
             </span>
             <button
-                className="btn"
+                className="btn btn-small"
                 onClick={() => {
                     disconnect();
                 }}

@@ -21,7 +21,8 @@ export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
                     <div className="grow">
                         <h3>#{tokenId}</h3>
                     </div>
-                    <div className="btn btn-small">Delegate</div>
+                    <div>Delegate Soon</div>
+                    {/* <div className="btn btn-small">Delegate</div> */}
                 </div>
             ) : (
                 <div>
