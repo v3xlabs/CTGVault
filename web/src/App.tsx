@@ -22,7 +22,7 @@ export const App = () => {
                             The winnings will automatically be sent alongside the delegated NFT once the prize is recieved!
                         </p>
                         <h2>Is this a rug pull?</h2>
-                        <p>Nope! This is a collaboration between IYK, NPC Labs (Authors of 6551) and ENS to show off the power of decentralized digital assets.</p>
+                        <p>Nope! This is a collaboration between people from IYK, NPC Labs (Authors of 6551), ENS, and V3X to show off the power of decentralized digital assets.</p>
                         <p>View the <a href="https://github.com/Ryan-Ouyang/6551-ctg-vault" target="_blank">source code of the contract</a>.</p>
                         <button className="w-full p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer">
                             Connect Wallet
