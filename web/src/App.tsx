@@ -1,6 +1,11 @@
+import { useAccount } from "wagmi";
+import { ConnectWallet } from "./connectwallet/ConnectWallet";
 import { Countdown } from "./countdown/Countdown";
+import { PlayerList } from "./playerlist/PlayerList";
+import { WalletInfo } from "./walletinfo/WalletInfo";
 
 export const App = () => {
+    const {isConnected} = useAccount();
 
     return (
         <div className="w-full">
@@ -29,9 +34,9 @@ export const App = () => {
                         <h2>Countdown</h2>
                         <p>Once the vote starts, you no longer will be able to delgate your vote!</p>
                         <Countdown to={new Date("2024-04-18T00:00:00.000Z")} />
-                        <button className="w-full p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer">
-                            Connect Wallet
-                        </button>
+                        {!isConnected && <ConnectWallet />}
+                        {isConnected && <WalletInfo />}
+                        {isConnected && <PlayerList />}
                     </div>
                 </div>
             </div>

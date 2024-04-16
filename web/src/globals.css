@@ -21,3 +21,11 @@ p > a {
 .text-timer > span {
     @apply border text-center px-2 border-dark-border rounded-md;
 }
+
+.btn {
+    @apply p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer;
+}
+
+.btn.btn-small {
+    @apply py-1.5;
+}

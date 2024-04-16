@@ -5,6 +5,12 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@ens-tools/format':
+    specifier: ^0.0.2
+    version: 0.0.2
+  '@tanstack/react-query':
+    specifier: ^5.29.2
+    version: 5.29.2(react@18.2.0)
   '@vitejs/plugin-react':
     specifier: ^4.2.1
     version: 4.2.1(vite@5.2.8)
@@ -26,6 +32,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.4.3
     version: 3.4.3
+  use-enstate:
+    specifier: 0.0.1-10
+    version: 0.0.1-10(swr@2.2.5)
   viem:
     specifier: ^2.9.19
     version: 2.9.19(typescript@5.4.5)
@@ -1655,6 +1664,10 @@ packages:
 
   /@emotion/weak-memoize@0.3.1:
     resolution: {integrity: sha512-EsBwpc7hBUJWAsNPBmJy4hxWx12v6bshQsldrVmjxJoc3isbxhOrF2IcCpaXxfvq03NwkI7sbsOLXbYuqF/8Ww==}
+    dev: false
+
+  /@ens-tools/format@0.0.2:
+    resolution: {integrity: sha512-hgIznthtDRaxtmuGsvv51RpL840daIk619nBG90lTWFGnrfzKWaKNo98QA/n+7WWd//47Bvy/3unv0VVgQaggA==}
     dev: false
 
   /@esbuild/aix-ppc64@0.20.2:
@@ -9342,6 +9355,14 @@ packages:
     dependencies:
       punycode: 2.3.1
     dev: true
+
+  /use-enstate@0.0.1-10(swr@2.2.5):
+    resolution: {integrity: sha512-k5hXmUUiJ3JnYUkRJYdYbHSa4xQQVrZErGk9bKqaZSJRF3VIBaMbzyDur33W9tj1ydDu+KTrc9dTXYPoNhXroQ==}
+    peerDependencies:
+      swr: ^2
+    dependencies:
+      swr: 2.2.5(react@18.2.0)
+    dev: false
 
   /use-sync-external-store@1.2.0(react@18.2.0):
     resolution: {integrity: sha512-eEgnFxGQ1Ife9bzYs6VLi8/4X6CObHMw9Qr9tPY43iKwsPw8xE8+EFsf/2cFZ5S3esXgpWgtSCtLNS41F+sKPA==}
