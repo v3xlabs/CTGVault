@@ -5,3 +5,7 @@
 html, body {
     @apply bg-light-background-secondary;
 }
+
+h2 {
+    @apply text-2xl font-bold text-light-text-primary;
+}
