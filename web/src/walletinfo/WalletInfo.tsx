@@ -1,9 +1,10 @@
 import { formatAddress } from '@ens-tools/format';
 import { useProfile } from 'use-enstate';
-import { useAccount } from 'wagmi';
+import { useAccount, useDisconnect } from 'wagmi';
 
 export const WalletInfo = () => {
     const { address } = useAccount();
+    const { disconnect } = useDisconnect();
     const { data } = useProfile(address as string, { endpoint: 'https://enstate.rs', enabled: address !== undefined });
 
     return (
@@ -21,7 +22,9 @@ export const WalletInfo = () => {
                     </span>
                 ) : formatAddress(address as string)}</span>
             </span>
-            <button className="btn">
+            <button className="btn" onClick={() => {
+                disconnect();
+            }}>
                 Disconnect
             </button>
         </div>

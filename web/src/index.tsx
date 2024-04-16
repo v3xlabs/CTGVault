@@ -8,6 +8,7 @@ import { WagmiProvider } from 'wagmi';
 import { http, createConfig } from 'wagmi';
 import { base, mainnet, optimism } from 'wagmi/chains';
 import { injected, metaMask, safe, walletConnect } from 'wagmi/connectors';
+import { ConnectKitProvider } from 'connectkit';
 
 import { App } from './App';
 
@@ -37,7 +38,9 @@ ReactDOM.createRoot(document.querySelector('#root') as HTMLElement).render(
         <SWRConfig>
             <WagmiProvider config={config}>
                 <QueryClientProvider client={queryClient}>
-                    <App />
+                    <ConnectKitProvider>
+                        <App />
+                    </ConnectKitProvider>
                 </QueryClientProvider>
             </WagmiProvider>
         </SWRConfig>
