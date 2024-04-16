@@ -23,7 +23,6 @@ const config = createConfig({
         safe(),
     ],
     transports: {
-        [mainnet.id]: http(),
         [base.id]: http(),
     },
 })

@@ -7,7 +7,11 @@ html, body {
 }
 
 h2 {
-    @apply text-2xl font-bold text-dark-text-primary;
+    @apply text-2xl font-bold text-dark-text-primary py-2;
+}
+
+p {
+    @apply py-2;
 }
 
 p > a {

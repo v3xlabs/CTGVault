@@ -11,7 +11,7 @@ export const App = () => {
         <div className="w-full">
             <div className="w-full max-w-xl p-4 mx-auto">
                 <div className="w-full border rounded-xl p-4 border-dark-border bg-dark-background-primary">
-                    <div className="flex flex-col gap-4">
+                    <div className="">
                         <p>
                             Will is going to win, but will you?
                         </p>
