@@ -10,7 +10,7 @@ export const PlayerList = () => {
     const { data } = usePlayers(address as string);
 
     return (
-        <div>
+        <>
             <h2>Your Players</h2>
             <div>
                 {
@@ -20,6 +20,6 @@ export const PlayerList = () => {
                     data && data.ownedNfts.length === 0 && <p>No players found</p>
                 }
             </div>
-        </div>
+        </>
     )
 };
