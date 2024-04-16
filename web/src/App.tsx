@@ -3,7 +3,7 @@ export const App = () => {
     return (
         <div className="w-full">
             <div className="w-full max-w-xl p-4 mx-auto">
-                <div className="w-full border rounded-xl p-4 border-light-border bg-light-background-primary">
+                <div className="w-full border rounded-xl p-4 border-dark-border bg-dark-background-primary">
                     <div className="flex flex-col gap-4">
                         <p>
                             Will is going to win, but will you?
@@ -15,8 +15,10 @@ export const App = () => {
                         <h2>Participate</h2>
                         <p>
                             Use the component below to delegate your jury duty to Will.
+                            By staking your CTG Jury NFT, you are trusting your power to Will, and in return, you will receive a portion of the rewards.
                         </p>
-                        <button className="w-full p-4 rounded-lg border border-light-border hover:bg-light-background-secondary cursor-pointer">
+                        <p>View the <a href="https://github.com/Ryan-Ouyang/6551-ctg-vault" target="_blank">source code of the contract</a>.</p>
+                        <button className="w-full p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer">
                             Connect Wallet
                         </button>
                     </div>

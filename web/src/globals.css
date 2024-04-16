@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 html, body {
-    @apply bg-light-background-secondary;
+    @apply bg-dark-background-secondary text-dark-text-secondary;
 }
 
 h2 {
-    @apply text-2xl font-bold text-light-text-primary;
+    @apply text-2xl font-bold text-dark-text-primary;
+}
+
+p > a {
+    @apply text-dark-blue-primary;
 }
