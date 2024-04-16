@@ -27,6 +27,7 @@ export const App = () => {
                         <p>Nope! This is a collaboration between people from IYK, NPC Labs (Authors of 6551), ENS, and V3X to show off the power of decentralized digital assets.</p>
                         <p>View the <a href="https://github.com/Ryan-Ouyang/6551-ctg-vault" target="_blank">source code of the contract</a>.</p>
                         <h2>Countdown</h2>
+                        <p>Once the vote starts, you no longer will be able to delgate your vote!</p>
                         <Countdown to={new Date("2024-04-18T00:00:00.000Z")} />
                         <button className="w-full p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer">
                             Connect Wallet
