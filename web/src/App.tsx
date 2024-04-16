@@ -10,13 +10,19 @@ export const App = () => {
                         </p>
                         <h2>The Concept</h2>
                         <p>
-                            The concept is simple, you put your trust in will, and will puts his trust in you.
+                            The concept is simple, delegate your Jury CTG NFT to Will's Player NFT, and earn a portion of the winnings.
                         </p>
                         <h2>Participate</h2>
                         <p>
-                            Use the component below to delegate your jury duty to Will.
-                            By staking your CTG Jury NFT, you are trusting your power to Will, and in return, you will receive a portion of the rewards.
+                            Use the button below to delegate your jury vote to Will.
+                            By staking your CTG Jury NFT, you are "super voting" for Will. He won't be able to withdraw the NFT, just use it for the vote.
                         </p>
+                        <p>
+                            Once Will wins, he is only going to take 50% of the pot. The other 50% will be given proportionally to people that delegated their vote.
+                            The winnings will automatically be sent alongside the delegated NFT once the prize is recieved!
+                        </p>
+                        <h2>Is this a rug pull?</h2>
+                        <p>Nope! This is a collaboration between IYK, NPC Labs (Authors of 6551) and ENS to show off the power of decentralized digital assets.</p>
                         <p>View the <a href="https://github.com/Ryan-Ouyang/6551-ctg-vault" target="_blank">source code of the contract</a>.</p>
                         <button className="w-full p-4 rounded-lg border border-dark-border hover:bg-dark-background-secondary cursor-pointer">
                             Connect Wallet
