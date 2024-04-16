@@ -14,10 +14,10 @@ export const PlayerList = () => {
             <h2>Your Players</h2>
             <div>
                 {
-                    data && data.result.map((player) => <PlayerEntry tokenId={player.token_id} />)
+                    data && data.ownedNfts.map((player) => <PlayerEntry tokenId={player.tokenId} />)
                 }
                 {
-                    data && data.result.length === 0 && <p>No players found</p>
+                    data && data.ownedNfts.length === 0 && <p>No players found</p>
                 }
             </div>
         </div>

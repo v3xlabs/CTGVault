@@ -18,7 +18,7 @@ const config = createConfig({
     chains: [base],
     connectors: [
         injected(),
-        walletConnect({ projectId: '1234567890' }),
+        walletConnect({ projectId: '9a9eccbc15cb6504b32a44f9d0154c42' }),
         // metaMask(),
         safe(),
     ],
