@@ -61,9 +61,7 @@ export const App = () => {
                         </p>
                         <Countdown to={new Date('2024-04-18T00:00:00.000Z')} />
                         <h2>My Jury Duty</h2>
-                        <p>
-                            Delegate your jury duty using the component below.
-                        </p>
+                        <p>Delegate your CTG vote using the button below.</p>
                         {!isConnected && <ConnectWallet />}
                         {isConnected && <WalletInfo />}
                         {isConnected && <PlayerList />}
