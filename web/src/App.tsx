@@ -39,9 +39,33 @@ export const App = () => {
                         </p>
                         <h2>Is this a rug pull?</h2>
                         <p>
-                            Nope! This is a collaboration between people from
-                            IYK, Future Primitive (Authors of 6551), ENS, and
-                            V3X to show off the power of decentralized digital
+                            Nope! This is a collaboration between people from{' '}
+                            <a href="https:/iyk.app" target="_blank">
+                                IYK
+                            </a>
+                            ,{' '}
+                            <a
+                                href="https://twitter.com/futureprimitive"
+                                target="_blank"
+                            >
+                                Future Primitive
+                            </a>{' '}
+                            (Authors of{' '}
+                            <a
+                                href="https://eips.ethereum.org/EIPS/eip-6551"
+                                target="_blank"
+                            >
+                                ERC-6551
+                            </a>
+                            ),{' '}
+                            <a href="https://ens.domains/" target="_blank">
+                                ENS
+                            </a>
+                            , and{' '}
+                            <a href="https://v3x.company/" target="_blank">
+                                V3X
+                            </a>{' '}
+                            to show off the power of decentralized digital
                             assets.
                         </p>
                         <p>
@@ -79,7 +103,7 @@ export const App = () => {
                         <h2>Countdown</h2>
                         <p>
                             Once the vote starts, you no longer will be able to
-                            delgate your vote!
+                            delegate your vote!
                         </p>
                         <Countdown to={new Date('2024-04-17T20:00:00.000Z')} />
                         <h2>My Jury Duty</h2>
