@@ -4,21 +4,24 @@ import { ConnectWallet } from './connectwallet/ConnectWallet.jsx';
 import { Countdown } from './countdown/Countdown.jsx';
 import { PlayerList } from './playerlist/PlayerList.jsx';
 import { WalletInfo } from './walletinfo/WalletInfo.jsx';
+import poster from '../public/poster.png?url';
 
 export const App = () => {
     const { isConnected } = useAccount();
 
     return (
-        <div className="w-full">
-            <div className="w-full max-w-xl p-4 mx-auto">
-                <div className="w-full border rounded-xl p-4 border-dark-border bg-dark-background-primary">
+        <div className="">
+            <div className="p-4 justify-center md:flex mt-8 md:mt-16">
+                <div className="md:w-[500px] mr-10 mb-8 md:mb-0 w-full">
+                    <img src={poster} />
+                </div>
+                <div className="max-w-lg border rounded-xl p-4 border-dark-border bg-dark-background-primary">
                     <div className="space-y-3">
-                        <h1>Will you win with Will?</h1>
                         <h2>The Concept</h2>
                         <p>
                             The concept is simple, delegate your Jury CTG NFT to
                             Will's Player NFT, and earn a portion of the
-                            winnings. We will win.
+                            winnings. We WILL win.
                         </p>
                         <h2>How To</h2>
                         <p>
