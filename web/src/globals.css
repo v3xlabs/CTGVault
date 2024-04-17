@@ -15,7 +15,7 @@ p > a {
 }
 
 .text-timer {
-    @apply flex font-mono gap-0.5 w-fit text-6xl;
+    @apply flex font-mono gap-0.5 w-fit text-5xl;
     @apply text-red-500	;
 }
 
