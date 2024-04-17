@@ -13,14 +13,14 @@ export const App = () => {
             <div className="w-full max-w-xl p-4 mx-auto">
                 <div className="w-full border rounded-xl p-4 border-dark-border bg-dark-background-primary">
                     <div className="space-y-3">
-                        <p>Will is going to win, but will you?</p>
+                        <h1>Will you win with Will?</h1>
                         <h2>The Concept</h2>
                         <p>
                             The concept is simple, delegate your Jury CTG NFT to
                             Will's Player NFT, and earn a portion of the
-                            winnings.
+                            winnings. We will win.
                         </p>
-                        <h2>Participate</h2>
+                        <h2>How To</h2>
                         <p>
                             Use the button below to delegate your jury vote to
                             Will. By staking your CTG Jury NFT, you are "super
@@ -37,8 +37,9 @@ export const App = () => {
                         <h2>Is this a rug pull?</h2>
                         <p>
                             Nope! This is a collaboration between people from
-                            IYK, NPC Labs (Authors of 6551), ENS, and V3X to
-                            show off the power of decentralized digital assets.
+                            IYK, Future Primitive (Authors of 6551), ENS, and
+                            V3X to show off the power of decentralized digital
+                            assets.
                         </p>
                         <p>
                             View the{' '}
