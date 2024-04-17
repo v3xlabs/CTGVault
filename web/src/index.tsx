@@ -7,7 +7,7 @@ import ReactDOM from 'react-dom/client';
 import { SWRConfig } from 'swr';
 import { WagmiProvider } from 'wagmi';
 import { createConfig, http } from 'wagmi';
-import { base } from 'wagmi/chains';
+import { base, sepolia } from 'wagmi/chains';
 import { injected, safe, walletConnect } from 'wagmi/connectors';
 
 import { App } from './App.jsx';
@@ -15,7 +15,10 @@ import { App } from './App.jsx';
 const queryClient = new QueryClient();
 
 const config = createConfig({
-    chains: [base],
+    chains: [
+        base,
+        // sepolia
+    ],
     connectors: [
         injected(),
         walletConnect({
@@ -27,6 +30,7 @@ const config = createConfig({
     ],
     transports: {
         [base.id]: http(),
+        // [sepolia.id]: http(),
     },
 });
 
