@@ -13,7 +13,7 @@ import { useEffect } from 'react';
 
 // Base
 export const CTG_VAULT_CHAIN = base.id;
-export const CTG_VAULT_ADDRESS = '0xTODO';
+export const CTG_VAULT_ADDRESS = '0x50351173A9338E2741A747B78db6B1101F70eC3c';
 
 export const PlayerList = () => {
     // TODO: Load a users nfts here
