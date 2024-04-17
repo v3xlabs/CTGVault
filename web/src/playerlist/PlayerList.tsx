@@ -59,7 +59,10 @@ export const PlayerList = () => {
             <div>
                 {stakedData &&
                     stakedData.map((player) => (
-                        <PlayerEntry tokenId={player.toString()} />
+                        <PlayerEntry
+                            tokenId={player.toString()}
+                            hideDelegateButton
+                        />
                     ))}
                 {stakedData && stakedData.length === 0 && <p>No NFTs found</p>}
             </div>

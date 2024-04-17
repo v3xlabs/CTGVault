@@ -7,7 +7,10 @@ import { CTG_TOKEN_CHAIN, CTG_TOKEN_CONTRACT } from './getPlayers.js';
 import { CTG_VAULT_ADDRESS } from './PlayerList.js';
 import { CTG_TOKEN_ABI } from '../CTGTokenAbi.js';
 
-export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
+export const PlayerEntry: FC<{
+    tokenId: string;
+    hideDelegateButton?: boolean;
+}> = ({ tokenId, hideDelegateButton }) => {
     const { data } = usePlayerMetadata(tokenId);
 
     const { address } = useAccount();
@@ -40,9 +43,11 @@ export const PlayerEntry: FC<{ tokenId: string }> = ({ tokenId }) => {
                     <h3>#{tokenId}</h3>
                 </div>
                 {/* <div>Delegate Soon</div> */}
-                <div className="btn btn-small" onClick={transferToken}>
-                    Delegate
-                </div>
+                {!hideDelegateButton && (
+                    <div className="btn btn-small" onClick={transferToken}>
+                        Delegate
+                    </div>
+                )}
             </div>
         </div>
     );
