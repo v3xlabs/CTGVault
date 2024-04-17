@@ -59,7 +59,7 @@ export const App = () => {
                             Once the vote starts, you no longer will be able to
                             delgate your vote!
                         </p>
-                        <Countdown to={new Date('2024-04-18T00:00:00.000Z')} />
+                        <Countdown to={new Date('2024-04-17T20:00:00.000Z')} />
                         <h2>My Jury Duty</h2>
                         <p>Delegate your CTG vote using the button below.</p>
                         {!isConnected && <ConnectWallet />}
