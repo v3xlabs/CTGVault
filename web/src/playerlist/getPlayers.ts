@@ -1,6 +1,5 @@
 import useSWR from 'swr';
-
-const CTG_CONTRACT = 0x4D_FC_7E_A5_AC_59_B6_32_23_93_0C_13_47_96_FE_CC_42_58_D0_93;
+import { base, sepolia } from 'viem/chains';
 
 type AlchemyPlayerResult = {
     contract: {
@@ -83,15 +82,26 @@ type AlchemyResultType = {
     pageKey: null;
 };
 
-const ctg_contract = '0x4dfc7ea5ac59b63223930c134796fecc4258d093';
+// Sepolia
+// export const CTG_TOKEN_CHAIN = sepolia.id;
+// export const CTG_TOKEN_CONTRACT = '0x5D0b7eEeBFE2Daa14eBa624Dd794ccAe5AcB6037';
+
+// Base
+export const CTG_TOKEN_CHAIN = base.id;
+export const CTG_TOKEN_CONTRACT = '0x4dfc7ea5ac59b63223930c134796fecc4258d093';
 
 const ALCHEMY_API = 'fY_TK6shxxy4KXzHL3IDzh_p8QKDpGyL';
 
 export const getPlayers = async (owner: string) => {
     const result = await fetch(
-        `https://base-mainnet.g.alchemy.com/nft/v3/${ALCHEMY_API}/getNFTsForOwner?owner=${owner}&contractAddresses[]=${ctg_contract}&withMetadata=true&pageSize=100`,
+        `https://base-mainnet.g.alchemy.com/nft/v3/${ALCHEMY_API}/getNFTsForOwner?owner=${owner}&contractAddresses[]=${CTG_TOKEN_CONTRACT}&withMetadata=true&pageSize=100`,
         {}
     );
+
+    // const result = await fetch(
+    //     `https://eth-sepolia.g.alchemy.com/nft/v3/${ALCHEMY_API}/getNFTsForOwner?owner=${owner}&contractAddresses[]=${CTG_TOKEN_CONTRACT}&withMetadata=true&pageSize=100`,
+    //     {}
+    // );
 
     return result.json() as any as AlchemyResultType;
 };
