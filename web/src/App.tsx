@@ -45,14 +45,36 @@ export const App = () => {
                             assets.
                         </p>
                         <p>
-                            View the{' '}
+                            View the source code of this{' '}
+                            <a
+                                href="https://github.com/v3xlabs/CTGVault"
+                                target="_blank"
+                            >
+                                website
+                            </a>{' '}
+                            as well as the{' '}
                             <a
                                 href="https://github.com/Ryan-Ouyang/6551-ctg-vault"
                                 target="_blank"
                             >
-                                source code of the contract
+                                contract
                             </a>
-                            .
+                            . <br />
+                            View the contract on Basescan (
+                            <a
+                                href="https://basescan.org/address/0x50351173a9338e2741a747b78db6b1101f70ec3c#readProxyContract"
+                                target="_blank"
+                            >
+                                proxy
+                            </a>
+                            ,{' '}
+                            <a
+                                href="https://basescan.org/address/0xc3d7bbb4a7acfbfb002c8817026f515364bb2d01#code"
+                                target="_blank"
+                            >
+                                implementation
+                            </a>
+                            ) directly.
                         </p>
                         <h2>Countdown</h2>
                         <p>
